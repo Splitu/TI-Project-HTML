@@ -29,10 +29,15 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	font-family: "Roboto", sans-serif;
 	font-size: 1.6rem;
+	min-height: 100vh;
 }
-
+.main {
+	flex-grow: 1;
+}
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -335,10 +340,6 @@ button[type="reset"] {
 }
 
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
 	background-color: #333;
 	color: #fff;
 	padding: 20px 0;
